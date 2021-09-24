@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <!-- Links -->
+    <link href="style.css" rel="stylesheet" />
+    <link href="contactus.css" rel="stylesheet" />
+    
+</head>
+<body>
+    <nav id="navbar">
+        <div id="navbar__brand">
+            <img 
+                src="./assests/Brand__logo.png"
+                alt="logo"
+                id="smp__logo"
+            />
+        </div>
+        <div id="nav__items">
+            <div>
+                <p id="home" class="button">
+                    <a href="index.html" id="navigationToHome">Home</a>
+                </p>
+            </div>
+            <div>
+                <p id="contactUs" class="button" style="text-decoration: underline;">
+                    <a href="contact.html" id="navigationToContact">Contact Us</a>
+                </p>
+            </div>
+            <div>
+                <p id="aboutUs" class="button">
+                    <a href="aboutus.html" id="navigationToAboutus">About Us</a>
+                </p>
+            </div>
+        </div>
+    </nav>
+
+    <div id="contactUs__image1">
+        <img 
+            src="./assests/Wavy_Med-08_Single-10.jpg"
+            alt="decorative image"
+            id="contactUs__image1_1"
+        />
+    </div>
+
+    <!--Contact us form-->
+    <main class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Contact US</h1>
+            <p id="description" class="description text-center">Thank you for taking time to contact us</p>
+        </header>
+        <form id="survey-form" action="contact.php" method="POST">
+            <div id="form__padding">
+                <div class="form__elements">
+                    <label id="name-label" for="name">
+                        Name
+                    </label>
+                    <input 
+                        type="text"
+                        name="name"
+                        placeholder="eg: Ranjita.m" 
+                        id="name"
+                        class="form__element__control"
+                        required
+                    />
+                </div>
+                <div class="form__elements">
+                    <label id="number-label" for="age">
+                        Phone
+                    </label>
+                    <input  
+                        type="number"
+                        name="phone"
+                        placeholder="eg: 8105661467" 
+                        id="number"
+                        min="10"                            
+                        class="form__element__control"
+                        required
+                    />
+                </div>
+                <div class="form__elements">
+                    <label id="email-label" for="email">
+                        Email
+                    </label>
+                    <input 
+                        type="email"
+                        name="email"
+                        placeholder="example@example.com" 
+                        id="email"
+                        class="form__element__control"
+                        required
+                    />
+                </div>
+                <div class="form__elements">
+                    <label id="number-label" for="age">
+                        Age
+                    </label>
+                    <input  
+                        type="number"
+                        name="age"
+                        placeholder="eg: 21" 
+                        id="number"
+                        min="10"                            
+                        max="70"
+                        class="form__element__control"
+                        required
+                    />
+                </div>
+                <div class="form__elements">
+                    <p class="questions">What gender are you</p>                        
+                    <label for="male">
+                        <input 
+                            type="radio" 
+                            id="male"
+                            name="gender" 
+                            value="male"
+                            class="radio__input"
+                        />
+                        I am male
+                    </label>
+                    <label for="female">
+                        <input 
+                            type="radio" 
+                            id="female"
+                            name="gender"
+                            value="female"
+                            class="radio__input"
+                        />
+                        I am female
+                    </label>
+                    <label>
+                        <input 
+                            type="radio" 
+                            id="other"
+                            name="gender"
+                            value="other"
+                            class="radio__input"
+                        />
+                    I prefer not to say / other
+                    </label>
+                </div>
+                <div class="form__elements">
+                    <p>Write your message?</p>
+                    <textarea 
+                        id="comments"
+                        class="input-textarea"
+                        name="comment"
+                        placeholder="Enter your message here..."
+                    ></textarea>
+                </div>
+                <div class="form__elements">
+                    <button 
+                        type="submit" 
+                        id="submit" 
+                        class="submit-button button"
+                        onclick="submit()"    
+                    >
+                    Submit
+                    </button>
+                </div>
+            </div> 
+        </form>
+    </main>
+    <div id="contactUs__image2">
+        <img 
+            src="./assests/Wavy_Lst-21_Single-07.jpg"
+            alt="decorative image"
+            id="contactUs__image2_1"
+        />
+    </div>
+</body>
+</html>
